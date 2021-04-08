@@ -1,0 +1,164 @@
+.header {
+    background: rgba(#000000, 0.7);
+    @media screen and (max-width: $desktop) {
+        background: url('../img/pareja-pierde-grasa-gana-musculo.jpg') no-repeat center top;
+        background-size: cover;
+    }
+    &-bg {
+        @media screen and (max-width: $desktop) {
+            background: rgba(#000000, 0.7);
+        }
+    }
+    &-container {
+        min-height: 100vh;
+    }
+    &-logo {
+        width: 13rem;
+        @media screen and (min-width: $desktop) {
+            width: 15rem;
+            left: -0.8rem;
+        }
+    }
+    &-video {
+        position: absolute;
+        z-index: -1;
+    }
+    &-img {
+        display: grid;
+        grid: repeat(5, 20%)/repeat(3, 33.33%);
+        min-height: 100vh;
+        grid-template-areas:
+            ". header-img-3 ."
+            "header-img-1 header-img-3 header-img-6"
+            "header-img-1 header-img-4 header-img-6"
+            "header-img-2 header-img-4 header-img-7"
+            "header-img-2 header-img-5 header-img-7"
+            ". header-img-5 .";
+        gap: 0.8rem 0.8rem;
+        z-index: 1;
+        @media screen and (max-width: $desktop) {
+            display: none;
+        }
+        &-images {
+            border: 0.1rem solid $principal;
+            border-radius: 0.8rem;
+        }
+        &-1 {
+            grid-area: header-img-1;
+            background: url('../img/mujer-pierde-grasa-gana-musculo.jpg') no-repeat center right;
+            background-size: cover;
+        }
+        &-2 {
+            grid-area: header-img-2;
+            background: url('../img/pierde-grasa-abdomen.jpg') no-repeat center left;
+            background-size: cover;
+        }
+        &-3 {
+            grid-area: header-img-3;
+            background: url('../img/pierna-gana-musculo.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        &-4 {
+            grid-area: header-img-4;
+            background: url('../img/pareja-pierde-grasa-gana-musculo.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        &-5 {
+            grid-area: header-img-5;
+            background: url('../img/joven-gana-musculo.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        &-6 {
+            grid-area: header-img-6;
+            background: url('../img/hombre-pierde-grasa-gana-musculo.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        &-7 {
+            grid-area: header-img-7;
+            background: url('../img/mujer-abdomen.jpg') no-repeat center center;
+            background-size: cover;
+        }
+    }
+}
+
+.content {
+    background: #F5F5F5;
+}
+
+.reservation-wa-icon {
+    top: 0.2rem;
+}
+
+.how {
+    &-text {
+        border-radius: 0.3rem;
+    }
+    &-bg {
+        &-1 {
+            top: 0;
+            left: 0;
+        }
+        &-2 {
+            bottom: 0;
+            right: 0;
+        }
+    }
+    &-gallery {
+        figure {
+            img {
+                border: 2px solid white;
+                border-radius: 0.5rem;
+            }
+        }
+    }
+    &-buttons {
+        button {
+            width: 200px;
+            border-radius: 2rem;
+            background: white;
+        }
+        button.btn-success {
+            background: $principal;
+        }
+    }
+}
+
+.footer {
+    background: black;
+    &-social {
+        border-right: 1px solid white;
+        @media screen and (max-width: $desktop) {
+            border: 0;
+        }
+    }
+    &-developed {
+        width: 2.5rem;
+    }
+    &-social {
+        ul {
+            list-style: none;
+        }
+    }
+}
+
+.info {
+    background: url('../img/se-fit-facilmente.jpg') no-repeat center center fixed;
+    background-size: cover;
+    &-container {
+        background: rgba(#000, 0.5);
+    }
+}
+
+.clients {
+    background: url('../img/mas-musculo-menos-grasa.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.faq {
+    &-bg {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
